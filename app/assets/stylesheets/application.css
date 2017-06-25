@@ -13,3 +13,131 @@
  *= require_tree .
  *= require_self
  */
+
+/* main application css */
+
+* {margin: 0; padding: 0;}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: Helvetica, sans-serif;
+    color: #7b8087;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #239aff;
+}
+
+.light {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+div.shadow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 900;
+}
+
+/* main application layout css */
+
+.grid-fixed {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.grid-fixed .c12 {
+    width: 940px;
+    margin: 0 10px;
+}
+
+.grid-fixed .c9 {
+    width: 700px;
+    margin: 0 170px 0 90px;
+}
+
+.grid-fixed .c8 {
+    width: 620px;
+    margin: 0 170px;
+}
+
+.grid-fixed .c6 {
+    width: 460px;
+    margin: 0 10px;
+    float: left;
+}
+
+.grid-fixed .c4 {
+    width: 300px;
+    margin: 0 10px;
+}
+
+.grid-fixed .c3 {
+    width: 220px;
+    margin: 0 10px;
+}
+
+.grid-fixed .break {
+    width: 960px;
+    height: 50px;
+    float: left;
+}
