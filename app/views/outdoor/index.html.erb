@@ -14,3 +14,17 @@
         </div>
     </div>
 </section>
+
+<section class="places">
+    <div class="grid-fixed">
+        <% @places.each do |place| %>
+            <%= link_to place.url do %>
+                <div class="c4 cf hover-change">
+                    <%= image_tag place.image, :height => '200px', :width => '100%', :alt => 'location_image' %>
+                    <h4><%= place.title %></h4>
+                    <h5><%= place.city %>, <%= place.state %></h5>
+                </div>
+            <% end %>
+        <% end %>
+    </div>
+</section>
