@@ -34,3 +34,20 @@
 .announcement h4 a:hover{
     color: #239aff;
 }
+
+.places {
+    padding: 20px 0;
+}
+
+.places h4, .places h5 {
+    padding: 0 0 0 10px;
+}
+
+.places .hover-change {
+    background: rgba(0,0,0,0);
+    transition: all 0.2s;
+}
+
+.places .hover-change:hover {
+    background: rgba(0,0,0,0.08);
+}
