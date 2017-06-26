@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :places
   get 'outdoor/index'
 
   root 'outdoor#index'
