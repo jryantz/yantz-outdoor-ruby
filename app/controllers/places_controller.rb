@@ -64,11 +64,19 @@ class PlacesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_place
-      @place = Place.find(params[:id])
+      # This is the original code, self generated
+      # @place = Place.find(params[:id])
+
+      # Code added to prevent failure message if the user looks for an id that doesn't exist
+      unless @place = Place.where(id: params[:id]).first
+        flash[:alert] = 'Place not found.'
+        redirect_to root_url
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def place_params
       params.require(:place).permit(:title, :url, :image, :street_number, :street_name, :city, :state, :zip, :external_url)
     end
+
 end
