@@ -3,7 +3,7 @@
 <section class="call cf">
     <div class="call-header">
         <h2 class="light">Yantz Outdoor Collection</h2>
-        <h3 class="light" style="margin-top: 15px;">location - location - location</h3>
+        <h3 class="light" style="margin-top: 15px;">it's all about the location</h3>
     </div>
 </section>
 
@@ -11,13 +11,16 @@
     <div class="grid-fixed">
         <div class="c12 cf">
             <h4>
-                <a href="/places">Raw Data:</a> all of the places listed in the database
+                <a href="/places/new">Add Place</a> |
+                <a href="/places">View Places</a> |
+                <a href="#">Contact</a> |
+                <a href="#">About</a>
             </h4>
         </div>
     </div>
 </section>
 
-<section class="places">
+<section class="places cf">
     <div class="grid-fixed">
         <% @places.each do |place| %>
             <%= link_to place.url do %>
@@ -28,5 +31,15 @@
                 </div>
             <% end %>
         <% end %>
+    </div>
+</section>
+
+<section class="footer cf">
+    <div class="grid-fixed">
+        <p class="c6">By Jonathan Yantz</p>
+        <p class="c6" style="text-align: right;">
+            <a href="#">Contact</a> |
+            <a href="#">About</a>
+        </p>
     </div>
 </section>
