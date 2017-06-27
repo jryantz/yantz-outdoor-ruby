@@ -117,7 +117,8 @@ div.shadow {
 
 .grid-fixed .c8 {
     width: 620px;
-    margin: 0 170px;
+    margin: 0;
+    float: left;
 }
 
 .grid-fixed .c6 {
