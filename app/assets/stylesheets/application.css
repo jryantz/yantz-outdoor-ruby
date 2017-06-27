@@ -128,7 +128,7 @@ div.shadow {
 
 .grid-fixed .c4 {
     width: 300px;
-    margin: 0 10px;
+    margin: 0 10px 10px 10px;
     float: left;
 }
 
