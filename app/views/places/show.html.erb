@@ -12,8 +12,7 @@
     <div class="grid-fixed">
         <div class="c12 cf">
             <h4>
-                <%= link_to "Back", root_url %> |
-                <%= link_to "More Info", @place.external_url, target: :_blank %>
+                <%= link_to "Back", root_url %>
             </h4>
         </div>
     </div>
@@ -23,10 +22,14 @@
     <div class="grid-fixed">
         <div class="c4 cf">
             <br>
-            <p>Address:</p>
+            <p><em>Address:</em></p>
             <br>
             <p><%= @place.street_number %> <%= @place.street_name %></p>
             <p><%= @place.city %>, <%= @place.state %> <%= @place.zip %></p>
+            <br><br>
+            <p><em>Click for the official webpage:</em></p>
+            <br>
+            <p><%= link_to "More Info", @place.external_url, target: :_blank %></p>
         </div>
         <div class="c8 cf">
             <%= image_tag @place.image, :height => '400px', :width => '100%', :alt => 'location_image' %>
