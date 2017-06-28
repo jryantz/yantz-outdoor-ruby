@@ -23,7 +23,7 @@
 <section class="places cf">
     <div class="grid-fixed">
         <% @places.each do |place| %>
-            <%= link_to place.url do %>
+            <%= link_to "/places/#{place.id}" do %>
                 <div class="c4 cf hover-change">
                     <%= image_tag place.image, :height => '200px', :width => '100%', :alt => 'location_image' %>
                     <h4><%= place.title %></h4>
