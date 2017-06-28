@@ -17,7 +17,7 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create place" do
     assert_difference('Place.count') do
-      post places_url, params: { place: { city: @place.city, external_url: @place.external_url, image: @place.image, state: @place.state, street_name: @place.street_name, street_number: @place.street_number, title: @place.title, url: @place.url, zip: @place.zip } }
+      post places_url, params: { place: { city: @place.city, external_url: @place.external_url, image: @place.image, phone: @place.phone, state: @place.state, street_name: @place.street_name, street_number: @place.street_number, title: @place.title, url: @place.url, zip: @place.zip } }
     end
 
     assert_redirected_to place_url(Place.last)
@@ -34,7 +34,7 @@ class PlacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update place" do
-    patch place_url(@place), params: { place: { city: @place.city, external_url: @place.external_url, image: @place.image, state: @place.state, street_name: @place.street_name, street_number: @place.street_number, title: @place.title, url: @place.url, zip: @place.zip } }
+    patch place_url(@place), params: { place: { city: @place.city, external_url: @place.external_url, image: @place.image, phone: @place.phone, state: @place.state, street_name: @place.street_name, street_number: @place.street_number, title: @place.title, url: @place.url, zip: @place.zip } }
     assert_redirected_to place_url(@place)
   end
 

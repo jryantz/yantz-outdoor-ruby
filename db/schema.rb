@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 20170628012914) do
     t.string "state"
     t.integer "zip"
     t.string "external_url"
+    t.string "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "phone"
   end
 
 end

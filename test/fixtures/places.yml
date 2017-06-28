@@ -10,6 +10,7 @@ one:
   state: MyString
   zip: 1
   external_url: MyString
+  phone: MyString
 
 two:
   title: MyString
@@ -21,3 +22,4 @@ two:
   state: MyString
   zip: 1
   external_url: MyString
+  phone: MyString

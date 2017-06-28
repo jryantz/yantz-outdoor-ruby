@@ -10,6 +10,7 @@ class CreatePlaces < ActiveRecord::Migration[5.1]
       t.string :state
       t.integer :zip
       t.string :external_url
+      t.string :phone
 
       t.timestamps
     end
