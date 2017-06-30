@@ -27,7 +27,11 @@
             <p><%= @place.street_number %> <%= @place.street_name %></p>
             <p><%= @place.city %>, <%= @place.state %> <%= @place.zip %></p>
             <br><br>
-            <p><em>Click for the official webpage:</em></p>
+            <p><em>Phone:</em></p>
+            <br>
+            <p><%= @place.phone %></p>
+            <br><br>
+            <p><em>Official Website:</em></p>
             <br>
             <p><%= link_to "More Info", @place.external_url, target: :_blank %></p>
         </div>
