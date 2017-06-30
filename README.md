@@ -1,5 +1,7 @@
 # README
 
+This app is a project for my Web Development I class for my Masters in Applied Computer Science at Frostburg State University.
+
 ## Ruby version
 
 * 2.4.1
