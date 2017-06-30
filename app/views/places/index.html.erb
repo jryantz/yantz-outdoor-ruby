@@ -1,45 +1,74 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Places</h1>
+<section class="call cf">
+    <div class="call-header">
+        <h2 class="light">Yantz Outdoor Collection</h2>
+        <h3 class="light" style="margin-top: 15px;">it's all about the location</h3>
+    </div>
+</section>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Url</th>
-      <th>Image</th>
-      <th>Street number</th>
-      <th>Street name</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Zip</th>
-      <th>External url</th>
-      <th>Phone</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<section class="announcement center">
+    <div class="grid-fixed">
+        <div class="c12 cf">
+            <h4>
+                <%= link_to "Back", root_url %>
+            </h4>
+        </div>
+    </div>
+</section>
 
-  <tbody>
-    <% @places.each do |place| %>
-      <tr>
-        <td><%= place.title %></td>
-        <td><%= place.url %></td>
-        <td><%= place.image %></td>
-        <td><%= place.street_number %></td>
-        <td><%= place.street_name %></td>
-        <td><%= place.city %></td>
-        <td><%= place.state %></td>
-        <td><%= place.zip %></td>
-        <td><%= place.external_url %></td>
-        <td><%= place.phone %></td>
-        <td><%= link_to 'Show', place %></td>
-        <td><%= link_to 'Edit', edit_place_path(place) %></td>
-        <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<section class="places cf">
+    <div class="grid-fixed">
+        <div class="c12 cf">
+            <h1>Places</h1>
+        </div>
 
-<br>
+        <div class="break"></div>
 
-<%= link_to 'New Place', new_place_path %>
+        <% @places.each do |place| %>
+            <div class="c12 cf" style="border-bottom: 1px solid #ccc; padding-bottom: 15px; margin-bottom: 15px;">
+                <div style="width: 20%; font-weight: 700; float: left;">Title</div>
+                <div style="width: calc(40% - 5px); font-weight: 700; float: left; margin-right: 5px;">Image</div>
+                <div style="width: 40%; font-weight: 700; float: left;">External Url</div>
+
+                <div style="width: 20%; float: left; overflow-wrap: break-word;"><%= place.title %></div>
+                <div style="width: calc(40% - 5px); float: left; overflow-wrap: break-word; margin-right: 5px;"><%= place.image %></div>
+                <div style="width: 40%; float: left; overflow-wrap: break-word;"><%= place.external_url %></div>
+
+                <div class="break" style="height: 25px;"></div>
+
+                <div style="width: 13%; font-weight: 700; float: left;">Street Number</div>
+                <div style="width: 20%; font-weight: 700; float: left;">Street Name</div>
+                <div style="width: 12%; font-weight: 700; float: left;">City</div>
+                <div style="width: 12%; font-weight: 700; float: left;">State</div>
+                <div style="width: 8%; font-weight: 700; float: left;">Zip</div>
+                <div style="width: 15%; font-weight: 700; float: left;">Phone</div>
+                <div style="width: 20%; font-weight: 700; float: left;">&nbsp;</div>
+
+                <div style="width: 13%; float: left;"><%= place.street_number %></div>
+                <div style="width: 20%; float: left;"><%= place.street_name %></div>
+                <div style="width: 12%; float: left;"><%= place.city %></div>
+                <div style="width: 12%; float: left;"><%= place.state %></div>
+                <div style="width: 8%; float: left;"><%= place.zip %></div>
+                <div style="width: 15%; float: left;"><%= place.phone %></div>
+                <div style="width: 20%; float: left;"><%= link_to 'Show', place %> &nbsp; <%= link_to 'Edit', edit_place_path(place) %> &nbsp; <%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+            </div>
+        <% end %>
+
+        <div class="break"></div>
+
+        <div class="c12 cf">
+            <%= link_to 'New Place', new_place_path %>
+        </div>
+    </div>
+</section>
+
+<section class="footer cf">
+    <div class="grid-fixed">
+        <p class="c6">By Jonathan Yantz</p>
+        <p class="c6" style="text-align: right;">
+            <a href="#">Contact</a> |
+            <a href="#">About</a>
+        </p>
+    </div>
+</section>
