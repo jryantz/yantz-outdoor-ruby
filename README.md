@@ -20,10 +20,6 @@ This app is a project for my Web Development I class for my Masters in Applied C
 
 * more listed in gemfile...
 
-## Configuration
-
-* N/A
-
 ## Database creation and initialization
 
 * Run the following commands in the application:
@@ -37,11 +33,3 @@ This app is a project for my Web Development I class for my Masters in Applied C
 ## How to run the test suite
 
 * rails s or rails server
-
-## Services (job queues, cache servers, search engines, etc.)
-
-* N/A
-
-## Deployment instructions
-
-* N/A
