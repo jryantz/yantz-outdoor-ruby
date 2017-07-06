@@ -24,6 +24,14 @@
 
 <section class="places cf">
     <div class="grid-fixed">
+        <div class="c12 cf" style="margin-bottom: 25px; text-align: right;">
+            <div style="float: left;">Sort by: </div>
+            <a href="/">Location Ascending</a> |
+            <a href="/outdoor/index?order=reverse">Location Descending</a> |
+            <a href="/outdoor/index?order=alpha">Title Ascending</a> |
+            <a href="/outdoor/index?order=revalpha">Title Descending</a>
+        </div>
+
         <% @places.each do |place| %>
             <%= link_to "/places/#{place.id}" do %>
                 <div class="c4 cf hover-change">
